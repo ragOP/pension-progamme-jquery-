@@ -6,8 +6,8 @@ import './styles.scss'
 
 import { scrollTo } from '../utils';
 
-import Head_bg from '../assets/hero8.png'
-import Headline from '../assets/headline_spandeb1.png'
+import Head_bg from '../assets/v.jpg'
+import Headline from '../assets/ab.jpg'
 
 // google tag manager
 
@@ -103,7 +103,7 @@ export default function Fifth_SP() {
 	}
 
 
-	const [quiz, setQuiz] = useState("1. ¿Eres mayor de 18 años?")
+	const [quiz, setQuiz] = useState("1. ¿Gana menos de 50.000 dólares al año")
 	const [step, setStep] = useState("process")
 	const [min, setMin] = useState(3)
 	const [second, setSecond] = useState<any>(0)    
@@ -172,8 +172,8 @@ export default function Fifth_SP() {
 
 	const handleQuizP = () => {
 		topScroll("btn");
-		if(quiz === "1. ¿Eres mayor de 18 años?"){
-			setQuiz("2. ¿Tiene una deuda no garantizada de $10k o más?")
+		if(quiz === "1. ¿Gana menos de 50.000 dólares al año"){
+			setQuiz("2. ¿Tiene Medicare o Medicaid?")
 		}else{
 			setStep("Revisando sus respuestas...")
 			topScroll("top");
@@ -208,8 +208,8 @@ export default function Fifth_SP() {
 
 	const handleQuizN = () => {
 		topScroll("btn");
-		if(quiz === "1. ¿Eres mayor de 18 años?"){
-			setQuiz("2. ¿Tiene una deuda no garantizada de $10k o más?")
+		if(quiz === "1. ¿Gana menos de 50.000 dólares al año"){
+			setQuiz("2. ¿Tiene Medicare o Medicaid?")
 		}else{
 			setStep("Revisando sus respuestas...")
 			topScroll("top");
@@ -252,8 +252,8 @@ export default function Fifth_SP() {
 							{/* <div className='main-des-title-6'><b>Finalmente, los deudores están obteniendo hasta un<span style={{backgroundColor:"#fde047"}}> 100% de perdón financiero</span> bajo este programa respaldado por abogados, ¡Aquí está cómo!</b></div> */}
 							<img className='topic-img-larger' src = {Headline} alt = "head"/>
 							<img className='topic-img-middle' src = {Head_bg} alt = "head"/>
-							<div className='main-des-5'>Los estadounidenses con más de $10,000 en cuotas obtienen hasta un 100% de condonación financiera bajo este programa de ayuda de emergencia.</div>
-							<div className='main-des-5' style = {{marginTop:"1rem"}}><b>La oportunidad de inscribirse en este programa finaliza esta noche a las 7:00P.M.</b>, por lo que es mejor verificar su elegibilidad sin demora.</div>
+							<div className='main-des-5'>Los estadounidenses menores de 65 años pueden reclamar más de $6400 en créditos de salud, que pueden usarse para comestibles, alimentos, gasolina, recetas y cualquier otro gasto.</div>
+							<div className='main-des-5' style = {{marginTop:"1rem"}}><b>La oportunidad de inscribirse en este programa finaliza esta noche a las 7 P.M.</b>, por lo que es mejor verificar su elegibilidad sin demora.</div>
 							{/* <div className='main-des-5' style = {{marginTop:"1rem"}}><b>Simplemente responda las siguientes preguntas:</b></div> */}
 						</div>
 						<div className='survey'>
@@ -271,13 +271,13 @@ export default function Fifth_SP() {
 					{step}
 					</div>:
 					<div className='checking'>
-						<div className='congrats'>¡Felicitaciones, USTED CALIFICA!</div>
-						<div className='top-description-5'>¡Haga una llamada rápida para reclamar su alivio de deuda de hasta el 100 % ahora!</div>
+						<div className='congrats'>¡Felicitaciones, usted es elegible!!</div>
+						<div className='top-description-5'>Estás precalificado para $6400 en Créditos de Salud.</div>
 						<div className='spots-count'>Lugares restantes: 4</div>
 						<div className='tap-direction'>👇TOCA ABAJO PARA LLAMAR👇</div>
-						<a href = "tel:+18553050321">
+						<a href = "tel:+18557330447">
 							<div className='call-btn' onClick={handleCall}>
-							CALL (855) 305-0321
+							CALL (855) 733-0447
 							</div>
 						</a>
 						<div className='sub-title'>Nosotras hemos reservado tu lugar</div>
